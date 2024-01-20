@@ -1,0 +1,38 @@
+/*nav{
+    display: grid;
+}*/
+
+/*nav ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    align-items: stretch;
+    padding: 0;
+    justify-content: space-evenly;
+}*/
+/*nav ul li {
+    flex: 1 1 0 ;
+}*/
+
+.nav{
+    display: flex;
+    flex-grow: 3;
+    align-self: center;
+}
+.navUl {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    align-items: stretch;
+    padding: 0;
+    flex-grow: 1;
+    justify-content:space-between;
+}
+
+.navA {
+    text-decoration: none;
+    font-family: var(--primaryFontFamily);
+    font-size:large;
+    font-weight:normal;
+    color: var(--primaryColour1);
+}

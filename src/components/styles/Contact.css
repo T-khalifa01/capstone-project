@@ -1,0 +1,35 @@
+.contactDiv{
+    display:flex;
+    align-items: stretch;
+    height: 20vh;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.contactHeader{
+    display: flex;
+    flex-grow: 1;
+}
+
+.contactTitle{
+    color: var(--secondaryColour1);
+}
+.contactSection {
+    display: flex;
+    flex-grow: 1;
+}
+
+.contactUl {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    align-items: stretch;
+    padding: 0;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.contactA{
+    text-decoration: none;
+    color: var(--highlightColour1);
+}

@@ -1,0 +1,49 @@
+.dishcards{
+    background-color: var(--secondaryColour2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 29rem;
+    width: 16rem;
+    border-radius: 1rem;
+    box-shadow: -8, 8, 4, 0 rgba(0, 0, 0, 0.25);
+    margin: 16px;
+}
+.dishImgSec{
+    height: 16rem;
+    width: 16rem;
+}
+.dishTextSec{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.06rem;
+}
+.dishNameSec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dishName{
+    color: var(--highlightColour2);
+}
+.dishPrice{
+    color: var(--secondaryColour1);
+}
+.dishDescSec{
+    width: 14rem;
+    height: 5.938rem;
+    margin-top: 0.38rem;
+}
+.dishDesc{
+    color: var(--primaryColour1);
+}
+.dishButtonSec{
+display: flex;
+margin-top: 1.5rem;
+}
+.dishLink{
+    color: var(--highlightColour2);
+}

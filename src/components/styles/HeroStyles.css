@@ -1,0 +1,34 @@
+.Hero {
+    background-color: var(--primaryColour1);
+    display:flex;
+    justify-content: center;
+}
+.heroMain{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1080px;
+}
+.heroLayout{
+    display: flex;
+    flex-grow: 2;
+}
+.heroTextSec{
+    display: flex;
+    flex-grow: 3;
+    flex-direction: column;
+}
+.heroTitle{
+    color: var(--primaryColour2);
+}
+.heroSubTitle{
+    color: var(--highlightColour1);
+}
+.HeroDesc{
+    width: 28.8rem;
+    color: var(--highlightColour1);
+}
+/*.heroPicSec{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}*/

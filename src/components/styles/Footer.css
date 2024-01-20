@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    background-color: var(--primaryColour1);
+    justify-content: center;
+    height: 40vh;
+}
+.footerMain{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-basis: 1300px;
+}
+.navSecHeader{
+    color: var(--secondaryColour1);
+}

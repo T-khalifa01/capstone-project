@@ -1,0 +1,36 @@
+.socialsDiv{
+    display:flex;
+    align-items: stretch;
+    height: 20vh;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.socialsHeader{
+    display: flex;
+    flex-grow: 1;
+}
+
+.socialsSection {
+    display: flex;
+    flex-grow: 1;
+}
+
+.socialsTitle{
+    color: var(--secondaryColour1);
+}
+
+.socialsUl {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    align-items: stretch;
+    padding: 0;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.socialsA{
+    text-decoration: none;
+    color: var(--highlightColour1);
+}

@@ -1,0 +1,36 @@
+.userCards{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primaryColour1);
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 1rem;
+}
+.rating {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 1rem 0rem 1rem;
+}
+.ratingStars{
+    flex-grow: 1;
+    color: var(--primaryColour2);
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    margin: 0.81rem 1rem 0rem 1rem;
+    justify-content: space-evenly;
+}
+.userName{
+    color: var(--secondaryColour2);
+}
+.commentsSec{
+    display: flex;
+    height: 3.8675rem;
+    width: 10.5rem;
+    margin: 1rem;
+}
+.userComments{
+    color: var(--secondaryColour2);
+    overflow: hidden;
+}

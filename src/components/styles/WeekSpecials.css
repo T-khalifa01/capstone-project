@@ -1,0 +1,32 @@
+.specialsSec{
+    margin-top: 4rem;
+    margin-bottom: 5.69rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.specialsHeadingSec{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+.specialsHeading{
+    display: flex;
+    flex-direction: row;
+    color: var(--HighlightColour2);
+    flex-basis: 1080px;
+    justify-content: space-between;
+}
+.specialsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.specialsCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    flex-basis: 1080px;
+    flex-wrap:wrap;
+}

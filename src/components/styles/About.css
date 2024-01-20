@@ -1,0 +1,19 @@
+.aboutSec {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1080px;
+    justify-content: center;
+}
+.aboutTitle{
+    color: var(--primaryColour2);
+}
+.aboutSubTitle{
+    color: var(--primaryColour1);
+}
+.aboutDescSec{
+    width: 19.3125rem;
+    height: 11.25rem;
+}
+.aboutDesc{
+    color: var(--HighlightColour2);
+}

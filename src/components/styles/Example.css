@@ -1,0 +1,25 @@
+.mainBorder{
+    display: flex;
+}
+.border{
+    display: flex;
+    flex-grow: 1;
+    background-color: blue;
+}
+.boxcontainer{
+    display: flex;
+    flex-grow: 1;
+    width: 50vw;
+    height: 30rem;
+    background-color: aqua;
+    flex-shrink: 4;
+    outline: brown;
+}
+.innerbox{
+    display: flex;
+    width: 20rem;
+    height: 10rem;
+    flex-grow: 1;
+    background-color: rgb(18, 19, 19);
+    outline: brown;
+}

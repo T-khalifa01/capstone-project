@@ -1,12 +1,12 @@
+import HomePage from "../pages/HomePage";
+import Example from "./Example";
 
 
 function Main() {
+
   return (
     <main>
-      <section>Hero</section>
-      <section>Todays specials</section>
-      <section>Testimonials</section>
-      <section>About</section>
+      <HomePage/>
     </main>
   )
 }
