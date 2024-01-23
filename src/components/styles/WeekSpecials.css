@@ -15,8 +15,9 @@
     display: flex;
     flex-direction: row;
     color: var(--HighlightColour2);
-    flex-basis: 1080px;
+    flex-basis: min(969px, 80vw);
     justify-content: space-between;
+    align-items: baseline;
 }
 .specialsContainer {
     display: flex;
@@ -26,7 +27,7 @@
 .specialsCards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around ;
-    flex-basis: 1080px;
+    justify-content: flex-start ;
+    flex-basis: min(860px, 80vw);
     flex-wrap:wrap;
 }

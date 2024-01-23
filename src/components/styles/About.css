@@ -1,8 +1,11 @@
 .aboutSec {
     display: flex;
     flex-direction: row;
-    flex-basis: 1080px;
     justify-content: center;
+}
+.aboutMain{
+    display: flex;
+    flex-basis: min(860px, 75vw);
 }
 .aboutTitle{
     color: var(--primaryColour2);

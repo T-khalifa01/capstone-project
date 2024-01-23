@@ -9,11 +9,10 @@
     display:flex;
     justify-content:center;
     align-items: stretch;
-    flex-basis: max ;
+    flex-basis: min(1080px, 90vw);
 }
 .headerSVGcontainer{
     display: flex;
-    flex-grow: 1;
     align-self: center;
 }
 .logoSvg{
@@ -31,3 +30,5 @@
     padding: 0;
     justify-content: space-evenly;
 }*/
+
+@media screen and (max-width: 420px){ }

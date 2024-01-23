@@ -6,7 +6,7 @@
 .heroMain{
     display: flex;
     flex-direction: row;
-    flex-basis: 1080px;
+    flex-basis: min(860px, 75vw);
 }
 .heroLayout{
     display: flex;

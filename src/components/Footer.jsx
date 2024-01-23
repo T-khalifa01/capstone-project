@@ -6,9 +6,9 @@ import './styles/Footer.css'
 
 
 function Footer() {
-  const footernav = {
+  /*const footernav = {
     flexDirection:"column"
-  }
+  }*/
   return (
     <footer className="footer">
       <section className="footerMain">

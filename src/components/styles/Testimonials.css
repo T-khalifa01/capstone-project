@@ -11,7 +11,6 @@
     color: var(--HighlightColour2);
     margin-top: 4rem;
     display: flex;
-    flex-basis: 1080px;
     justify-content: center;
 }
 .testimonialsContainer{
@@ -24,6 +23,7 @@
 .testimonialcards{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-basis: 1080px;
+    justify-content: space-between;
+    flex-basis: min(1080px, 90vw);
+    overflow: hidden;
 }
