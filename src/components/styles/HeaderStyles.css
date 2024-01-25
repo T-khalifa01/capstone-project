@@ -13,6 +13,7 @@
 }
 .headerSVGcontainer{
     display: flex;
+    flex-grow: 1;
     align-self: center;
 }
 .logoSvg{
@@ -21,8 +22,14 @@
     outline-color: var(--highlightColour1);
     outline-style: solid;
     border-radius: 0%;
+    width: min(256px);
+    height: min(112px);
 }
-
+.nav{
+    display: flex;
+    flex-grow: 1;
+    align-self: center;
+}
 /*header nav ul {
     display:flex;
     margin: 0;

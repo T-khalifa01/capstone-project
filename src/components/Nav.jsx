@@ -1,6 +1,6 @@
 import './styles/NavStyles.css';
 
-function Nav() {
+function Nav({navlink}) {
 
   /*const navStyles = {
     alingSelf: "stretch"
@@ -15,16 +15,9 @@ function Nav() {
 
   }*/
   return (
-    <nav className='nav' >
-      <ul className='navUl' >
-        <li><a className='navA SectionTitle' href="">Home</a></li>
-        <li><a className='navA SectionTitle' href="">Menu</a></li>
-        <li><a className='navA SectionTitle' href="">About</a></li>
-        <li><a className='navA SectionTitle' href="">Reservations</a></li>
-        <li><a className='navA SectionTitle' href="">Order-Online</a></li>
-        <li><a className='navA SectionTitle' href="">Login</a></li>
-      </ul>
-    </nav>
+    <ul className='navUl' >
+      <li><a className='navA SectionTitle' href="">{navlink.name}</a></li>
+    </ul>
   )
 }
 

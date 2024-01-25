@@ -3,6 +3,13 @@ import './styles/HeaderStyles.css'
 
 function Header() {
 
+  const navlinks = [
+    {name:"About", href:""},
+    {name:"Menu", href:""},
+    {name:"Reservations", href:""},
+    {name:"Order-Online", href:""},
+    {name:"LogIn", href:""},
+  ]
   /*const headerStyle = {
     display : "flex",
     background : "aqua",
@@ -28,7 +35,11 @@ function Header() {
               </defs>
             </svg>
         </section>
-        <Nav/>
+        <nav className='nav' >
+          {navlinks.map((navlink, index) =>
+            <Nav key={index} navlink={navlink} />
+          )}
+        </nav>
       </section>
     </header>
   )
