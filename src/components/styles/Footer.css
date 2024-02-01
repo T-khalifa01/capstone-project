@@ -2,7 +2,7 @@
     display: flex;
     background-color: var(--primaryColour1);
     justify-content: center;
-    height: 40vh;
+    height: auto;
 }
 .footerMain{
     display: flex;
@@ -12,4 +12,7 @@
 }
 .navSecHeader{
     color: var(--secondaryColour1);
+}
+.fnav{
+    display: flex;
 }

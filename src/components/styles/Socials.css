@@ -1,7 +1,6 @@
 .socialsDiv{
     display:flex;
     align-items: stretch;
-    height: 20vh;
     flex-direction: column;
     flex-grow: 1;
 }

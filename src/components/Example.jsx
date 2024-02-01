@@ -1,4 +1,6 @@
 import './styles/Example.css'
+import Example2 from './Example2.jsx'
+import { ExampleData } from './Data.js'
 
 /*const profiles = [
     {name:"Kim Soun", rating:3.5, profilePic:"somepicture", comments:"1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"},
@@ -19,19 +21,70 @@ const notprofiles = {
         }
     ))*/
 import React from 'react'
+import Data from './Data.js'
 
-function Example() {
+
+function Example( ) {
+  // const stuff = [
+  //   {
+  //     id : 1,
+  //     title : "menubar",
+  //     price : "23.34",
+  //     desc : "fghjkds"
+  //   },
+  //   {
+  //     id : 2,
+  //     title : "menubar2",
+  //     price : "23.345",
+  //     desc : "fghjkds1"
+  //   },
+  //   {
+  //     id : 3,
+  //     title : "menubar3",
+  //     price : "23.346",
+  //     desc : "fghjkds2"
+  //   }
+  // ]
+  // const navUl = {
+  //   display: "flex",
+  //   margin: 0,
+  //   listStyleType: "none",
+  //   alignItems: "stretch",
+  //   padding: 0,
+  //   flexGrow: 1,
+  //   justifyContent:"space-evenly",
+  // }
+  const l = {
+    textDecoration: "none",
+    fontFamily: "var(--primaryFontFamily)",
+    fontSize:"large",
+    fontWeight: "normal",
+    color: "var(--primaryColour1)",
+    listStyleType: "none",
+}
+const Ul = {
+  // display: "flex",
+  margin: "0px",
+  listStyleType: "none",
+  // alignItems: "stretch",
+  padding: "0px",
+  // flexGrow: 1,
+  // justifyContent: "spaceEvenly",
+}
   return (
-    <div className='mainBorder'>
-    <div className='border'></div>
-    <div className='boxcontainer'>
-        <div className='innerbox'>
+    // <div className='mainBorder'>
+    // <div className='border'></div>
+    // <div className='boxcontainer'>
+    //     <div className='innerbox'>
 
-        </div>
+    //     </div>
+    // </div>
+    // <div className='border'></div>
+    // </div>
+    <div>
+      <Example2 data={ExampleData} lstyle={l} ulstle={Ul}/>
     </div>
-    <div className='border'></div>
-    </div>
-  )
+  );
 }
 
 export default Example

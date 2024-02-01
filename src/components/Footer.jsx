@@ -1,14 +1,26 @@
-import FooterNav from "./FooterNav";
+import Nav from "./Nav";
 import Contact from "./Contact";
 import Socials from "./Socials";
 import './styles/Footer.css'
+import { navlinks, contactLinks, socialsLinks } from "./Data";
 
 
 
 function Footer() {
-  /*const footernav = {
-    flexDirection:"column"
-  }*/
+
+  let navUlStyles= {
+    display: "flex",
+    margin: "0",
+    listStyleType: "none",
+    alignItems: "stretch",
+    padding : "0px",
+    justifyContent : "space-evenly",
+    flexDirection : "column",
+  }
+  let navAStyles= {
+    textDecoration: "none",
+    color: "var(--highlightColour1)",
+  }
   return (
     <footer className="footer">
       <section className="footerMain">
@@ -16,19 +28,16 @@ function Footer() {
           <img src= 'restauranfood.jpg' alt='a waiter holding four sandwitches on a plate' height={100}/>
         </article>
 
-        <article className="footerNav">
-          <header>
-            <h2 className="SectionTitle navSecHeader">Doormant Navigation</h2>
-          </header>
-          <FooterNav/>
+        <article className="fnav">
+          <Nav  navlists={navlinks} withHeader={true} navUlStyles={navUlStyles} navAStyles={navAStyles} />
         </article>
 
         <article className="footerContacts">
-          <Contact/>
+          <Contact  contactLinks={contactLinks} withHeader={true} />
         </article>
 
         <article className="footerSocials">
-          <Socials/>
+          <Socials  socialsLinks={socialsLinks} withHeader={true} />
         </article>
       </section>
     </footer>

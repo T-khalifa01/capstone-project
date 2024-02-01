@@ -1,15 +1,9 @@
 import Nav from "./Nav";
 import './styles/HeaderStyles.css'
+import { navlinks } from "./Data";
 
 function Header() {
 
-  const navlinks = [
-    {name:"About", href:""},
-    {name:"Menu", href:""},
-    {name:"Reservations", href:""},
-    {name:"Order-Online", href:""},
-    {name:"LogIn", href:""},
-  ]
   /*const headerStyle = {
     display : "flex",
     background : "aqua",
@@ -21,6 +15,19 @@ function Header() {
   const headerItemsStyles = {
     alingSelf: "stretch"
   }*/
+  const navUlStyles ={
+    display: "flex",
+    margin: 0,
+    listStyleType: "none",
+    padding: 0,
+    flexGrow: 1,
+    justifyContent: "space-evenly",
+  }
+  const navAStyles = {
+    textDecoration: "none",
+    color: "var(--primaryColour1)",
+  }
+  let AClass = "SectionTitle"
   return (
     <header className="header">
       <section className="headerMain">
@@ -36,9 +43,7 @@ function Header() {
             </svg>
         </section>
         <nav className='nav' >
-          {navlinks.map((navlink, index) =>
-            <Nav key={index} navlink={navlink} />
-          )}
+          <Nav navlists={navlinks} withHeader={false} navAStyles={navAStyles} navUlStyles={navUlStyles} AClass={AClass}/>
         </nav>
       </section>
     </header>
