@@ -55,6 +55,7 @@
   justify-content:center;
   align-items: stretch;
   flex-basis: min(1080px, 90vw);
+  padding: 16px 0 16px 0;
 }
 .menusec{
   display: flex;
@@ -83,14 +84,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: min(695px,90vw);
+    padding: 8px 0 8px 0;
   }
   .menusec{
     grid-column: 1/span 1;
     display: flex;
     /* align-self: center; */
-    /* align-items: center;
-    flex-grow: 1; */
-    align-content: center;
+    /*flex-grow: 1; */
+    align-items: center;
   }
   .headerSVGcontainer{
     grid-column: 2/span 1;

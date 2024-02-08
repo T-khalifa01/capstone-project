@@ -10,7 +10,7 @@ function LinkItems(props) {
 
     //props styles assignment
       let headerStyles = props.headerStyles;
-      let ulStyles = propsS.ulStyles;
+      let ulStyles = props.ulStyles;
       let liStyles = props.liStyles;
       let aStyles = props.aStyles;
 
@@ -56,14 +56,14 @@ function LinkItems(props) {
   //list items with header
     let withH = () => {
       return(
-        <div className='' >
+        <>
           <header >
-            <h2 className={headerClass}>{header}</h2>
+            <h2 className={headerClass} style={headerStyles}>{header}</h2>
           </header>
           <ul className={ulClass} style={mergedUl}>
             {listItems}
           </ul>
-        </div>
+        </>
       )
     };
 
@@ -71,7 +71,7 @@ function LinkItems(props) {
     let withOutH = () => {
       return(
         <ul className={ulClass} style={mergedUl}>
-          {socialLink}
+          {listItems}
         </ul>
       );
     };
