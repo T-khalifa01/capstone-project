@@ -63,7 +63,7 @@
 }
 .specialsCards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(192px, 256px));
+    grid-template-columns: repeat(auto-fit, clamp(192px, 224px, 256px));
     grid-template-rows: auto;
     row-gap: min(24px);
     flex-basis: min(860px, 80vw);

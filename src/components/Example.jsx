@@ -1,6 +1,9 @@
+import React from 'react'
 import './styles/Example.css'
-import Example2 from './Example2.jsx'
-import { ExampleData } from './Data.js'
+//import Example2 from './Example2.jsx'
+import { navlinks } from './Data.js'
+import UsescreenSize from './UseScreenSize.js'
+import Nav from './Nav.jsx'
 
 /*const profiles = [
     {name:"Kim Soun", rating:3.5, profilePic:"somepicture", comments:"1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"},
@@ -20,11 +23,10 @@ const notprofiles = {
             
         }
     ))*/
-import React from 'react'
-import Data from './Data.js'
 
 
-function Example( ) {
+
+//function Example( ) {
   // const stuff = [
   //   {
   //     id : 1,
@@ -54,24 +56,38 @@ function Example( ) {
   //   flexGrow: 1,
   //   justifyContent:"space-evenly",
   // }
-  const l = {
-    textDecoration: "none",
-    fontFamily: "var(--primaryFontFamily)",
-    fontSize:"large",
-    fontWeight: "normal",
-    color: "var(--primaryColour1)",
-    listStyleType: "none",
-}
-const Ul = {
+//   const l = {
+//     textDecoration: "none",
+//     fontFamily: "var(--primaryFontFamily)",
+//     fontSize:"large",
+//     fontWeight: "normal",
+//     color: "var(--primaryColour1)",
+//     listStyleType: "none",
+// }
+//const Ul = {
   // display: "flex",
-  margin: "0px",
-  listStyleType: "none",
+  //margin: "0px",
+  //listStyleType: "none",
   // alignItems: "stretch",
-  padding: "0px",
+  //padding: "0px",
   // flexGrow: 1,
   // justifyContent: "spaceEvenly",
-}
-  return (
+//}
+// const navUlStyles ={
+//   display: "flex",
+//   margin: 0,
+//   listStyleType: "none",
+//   padding: 0,
+//   flexGrow: 1,
+//   justifyContent: "space-evenly",
+// }
+// const navAStyles = {
+//   textDecoration: "none",
+//   color: "var(--primaryColour1)",
+// }
+// let AClass = "SectionTitle"
+// let screenSize = UsescreenSize();
+//   return (
     // <div className='mainBorder'>
     // <div className='border'></div>
     // <div className='boxcontainer'>
@@ -81,10 +97,39 @@ const Ul = {
     // </div>
     // <div className='border'></div>
     // </div>
-    <div>
-      <Example2 data={ExampleData} lstyle={l} ulstle={Ul}/>
+//     <div>
+//       {/* <Example2 data={ExampleData} lstyle={l} ulstle={Ul}/> */}
+//       <h1>width: {screenSize.Width}</h1>
+//       <h1>height: {screenSize.Height}</h1>
+//       <Nav navlists={navlinks} withHeader={false} listAStyles={navAStyles} listUlStyles={navUlStyles} AClass={AClass} fornav={true} />
+//     </div>
+//   );
+// }
+
+//export default Example
+
+function Example( ) {
+  const navUlStyles ={
+    display: "flex",
+    margin: 0,
+    listStyleType: "none",
+    padding: 0,
+    flexGrow: 1,
+    justifyContent: "space-evenly",
+  }
+  const navAStyles = {
+    textDecoration: "none",
+    color: "var(--primaryColour1)",
+  }
+  let AClass = "SectionTitle"
+  let screenSize = UsescreenSize();
+    return (
+      <div>
+      {/* <Example2 data={ExampleData} lstyle={l} ulstle={Ul}/> */}
+      <h1>width: {screenSize.Width}</h1>
+      <h1>height: {screenSize.Height}</h1>
+      <Nav navlists={navlinks} withHeader={false} listAStyles={navAStyles} listUlStyles={navUlStyles} AClass={AClass} fornav={true} />
     </div>
   );
 }
-
-export default Example
+export default Example;

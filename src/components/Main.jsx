@@ -1,5 +1,5 @@
 import HomePage from "../pages/HomePage";
-import Example from "./Example";
+// import Example from "./Example";
 
 
 function Main() {

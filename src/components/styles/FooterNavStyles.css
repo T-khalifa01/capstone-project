@@ -1,20 +1,20 @@
 .footernav{
-    display: flex;
-    flex-grow: 1;
-    align-self: center;
+  display: flex;
+  flex-grow: 1;
+  align-self: center;
 }
 .footernavUl {
-    display: flex;
-    margin: 0;
-    list-style-type: none;
-    align-items: stretch;
-    padding: 0;
-    flex-grow: 1;
-    justify-content: space-evenly;
-    flex-direction: column;
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  align-items: stretch;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .footernavA {
-    text-decoration: none;
-    color: var(--highlightColour1);
+  text-decoration: none;
+  color: var(--highlightColour1);
 }

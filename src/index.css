@@ -1,17 +1,19 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif, 'karla', 'Markazi-text';
+  font-family: 'karla', 'Markazi-text';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--highlightColour1)
 }
 
-code {
+/* -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif,  */
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 :root{
   --primaryColour1: #495E57;
@@ -25,14 +27,14 @@ code {
 }
 .DisplayTitle{
   font-family: var(--SecondaryFontFamily);
-  font-size: 4rem;
+  font-size: 85.3333px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 .SubTitle{
   font-family: var(--SecondaryFontFamily);
-  font-size: 2.5rem;
+  font-size: 53.3333px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -40,7 +42,7 @@ code {
 
 .LeadText{
   font-family: var(--primaryFontFamily);
-  font-size: 1.125rem;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -48,7 +50,7 @@ code {
 
 .SectionTitle{
   font-family: var(--primaryFontFamily);
-  font-size: 1.25rem;
+  font-size: 26.7px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -57,7 +59,7 @@ code {
 
 .SpecialSec{
   font-family: var(--primaryFontFamily);
-  font-size: 1rem;
+  font-size: 21.3333px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -65,7 +67,7 @@ code {
 
 .CardTitle{
   font-family: var(--primaryFontFamily);
-  font-size: 1.5rem;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -73,7 +75,7 @@ code {
 
 .HighlightText{
   font-family: var(--primaryFontFamily);
-  font-size: 1rem;
+  font-size: 21.3333px;
   font-style:normal;
   font-weight: 500;
   line-height: normal;
@@ -81,10 +83,10 @@ code {
 
 .ParagraphText{
   font-family: var(--primaryFontFamily);
-  font-size: 1rem;
+  font-size: 21.3333px;
   font-style: normal;
   font-weight: 400;
-  line-height: 0.9375rem;
+  line-height: 31.5px;
 }
 
 
