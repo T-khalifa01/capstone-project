@@ -39,24 +39,25 @@ function Nav() {
     };
     let aClass = "LeadText";
 
-  let svgUlStyles = {
-    listStyleType: "none",
-    marginBlockStart: "0em",
-    marginBlockEnd: "0em",
-    paddingInlineStart: "0px",
-    display: "flex",
-    flexGrow: 1,
-    justifyContent: "flex-end",
-    alignItems: "baseline"
-  }
-  let svgLStyles ={
-    listStyleType: "none",
-    paddingLeft: "16px"
-  }
-  let svgAStyles = {
-    textDecoration: "none",
-    color: "var(--primaryColour1)",
-  }
+  //svg styles
+    let svgUlStyles = {
+      listStyleType: "none",
+      marginBlockStart: "0em",
+      marginBlockEnd: "0em",
+      paddingInlineStart: "0px",
+      display: "flex",
+      flexGrow: 1,
+      justifyContent: "flex-end",
+      alignItems: "center",
+    };
+    let svgLStyles ={
+      listStyleType: "none",
+      paddingLeft: "16px"
+    };
+    let svgAStyles = {
+      textDecoration: "none",
+      color: "var(--primaryColour1)",
+    };
 
 
   return (
@@ -89,4 +90,4 @@ function Nav() {
   );
 }
 
-export default Nav
+export default Nav;
