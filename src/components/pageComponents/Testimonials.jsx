@@ -1,7 +1,7 @@
 import React from 'react'
-import CustomersCards from './CustomersCards'
-import "./styles/Testimonials.css"
-import { customers } from './Data'
+import CustomersCards from '../UserRatingCards'
+import "../styles/Testimonials.css"
+import { customers } from '../Data'
 
 function Testimonials() {
     return (

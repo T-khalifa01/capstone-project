@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function LinkItems(props) {
 
@@ -49,7 +50,7 @@ function LinkItems(props) {
   //maping listItems
     let listItems = data.map((link) => {
       return(
-        <li className={liClass} style={mergedLi} key={link.id}><a className={aClass} href='' style={mergedA}>{link.name}</a></li>
+        <li className={liClass} style={mergedLi} key={link.id}><Link className={aClass} to={link.to} style={mergedA}>{link.name}</Link></li>
       );
     });
 

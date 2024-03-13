@@ -1,7 +1,7 @@
 import React from 'react'
-import DishCards from './DishCards'
-import './styles/WeekSpecials.css'
-import { dishes } from './Data'
+import DishCards from '../DishCards'
+import '../styles/WeekSpecials.css'
+import { dishes } from '../Data'
 
 function WeekSpecials() {
 

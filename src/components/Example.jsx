@@ -1,9 +1,13 @@
 import React from 'react'
 import './styles/Example.css'
 //import Example2 from './Example2.jsx'
-import { navlinks } from './Data.js'
-import UsescreenSize from './UseScreenSize.js'
-import Nav from './Nav.jsx'
+// import { navlinks } from './Data.js'
+// import UsescreenSize from './UseScreenSize.js'
+// import Nav from './Nav.jsx'
+import Button from './Button.jsx'
+import Hero from './Hero.jsx'
+//import { Link } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 
 /*const profiles = [
     {name:"Kim Soun", rating:3.5, profilePic:"somepicture", comments:"1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"},
@@ -108,28 +112,60 @@ const notprofiles = {
 
 //export default Example
 
-function Example( ) {
-  const navUlStyles ={
-    display: "flex",
-    margin: 0,
-    listStyleType: "none",
-    padding: 0,
-    flexGrow: 1,
-    justifyContent: "space-evenly",
-  }
-  const navAStyles = {
-    textDecoration: "none",
-    color: "var(--primaryColour1)",
-  }
-  let AClass = "SectionTitle"
-  let screenSize = UsescreenSize();
-    return (
-      <div>
-      {/* <Example2 data={ExampleData} lstyle={l} ulstle={Ul}/> */}
-      <h1>width: {screenSize.Width}</h1>
-      <h1>height: {screenSize.Height}</h1>
-      <Nav navlists={navlinks} withHeader={false} listAStyles={navAStyles} listUlStyles={navUlStyles} AClass={AClass} fornav={true} />
+// function Example( ) {
+//   const navUlStyles ={
+//     display: "flex",
+//     margin: 0,
+//     listStyleType: "none",
+//     padding: 0,
+//     flexGrow: 1,
+//     justifyContent: "space-evenly",
+//   }
+//   const navAStyles = {
+//     textDecoration: "none",
+//     color: "var(--primaryColour1)",
+//   }
+//   let AClass = "SectionTitle"
+//   let screenSize = UsescreenSize();
+//     return (
+//       <div>
+//       {/* <Example2 data={ExampleData} lstyle={l} ulstle={Ul}/> */}
+//       <h1>width: {screenSize.Width}</h1>
+//       <h1>height: {screenSize.Height}</h1>
+//       <Nav navlists={navlinks} withHeader={false} listAStyles={navAStyles} listUlStyles={navUlStyles} AClass={AClass} fornav={true} />
+//     </div>
+//   );
+// }
+// export default Example;
+
+
+
+function Example() {
+  // return (
+  //   <>
+  //   {/* <Link to={"/"} > <Button Label={"button"}  disabled/></Link> */}
+  //   <Button Label={"Second"}  destination={"/About"} disabled={true}/>
+  //   <Button Label={"disabled"}  destination={"/About"} />
+  //   </>
+  // )
+  return(
+    <>
+      <Hero/>
+      <div style={{justifyContent:"center", display:"flex"}}>
+        <div style={{backgroundColor:"red", width:"200px",height:"200px", display:"flex", justifyContent:"center",'@media (minWidth: 700px)': {backgroundColor:'black',}}}></div>
+      </div>
+      <div style={{
+      width: '100%',
+      height: '100px',
+      backgroundColor: 'lightblue',
+      '@media (minWidth: 768px)': { // Media query for screens with minimum width of 768px
+        backgroundColor: 'lightgreen',
+      }
+    }}>
+      This is a responsive div.
     </div>
-  );
+    </>
+  )
 }
-export default Example;
+
+export default Example

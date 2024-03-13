@@ -1,11 +1,11 @@
 
 //nav data
 export const navlinks = [
-  {id : 1, name:"About", href:""},
-  {id : 2, name:"Menu", href:""},
-  {id : 3, name:"Reservations", href:""},
-  {id : 4, name:"Order-Online", href:""},
-  {id : 5, name:"LogIn", href:""},
+  {id : 1, name:"About", to:"/About"},
+  {id : 2, name:"Menu", to:"/DishMenu"},
+  {id : 3, name:"Reservations", to:"/Reservations"},
+  {id : 4, name:"Order-Online", to:"/OrderOnline"},
+  {id : 5, name:"LogIn", to:"/Login"},
 ];
 
 //dish data
