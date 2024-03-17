@@ -1,5 +1,5 @@
 .testimonials {
-    background-color: var(--secondaryColour2);
+    background-color: var(--highlightColour1);
     display: flex;
     flex-direction: column;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { noDishPng } from './Data'
 import './styles/DishCards.css'
 
 function DishCards(props) {

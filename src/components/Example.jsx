@@ -4,10 +4,12 @@ import './styles/Example.css'
 // import { navlinks } from './Data.js'
 // import UsescreenSize from './UseScreenSize.js'
 // import Nav from './Nav.jsx'
-import Button from './Button.jsx'
+//import Button from './Button.jsx'
 import Hero from './Hero.jsx'
 //import { Link } from 'react-router-dom'
 // import { useHistory } from 'react-router-dom'
+//import CustomersCards from './UserRatingCards.jsx'
+import Testimonials from './pageComponents/Testimonials.jsx'
 
 /*const profiles = [
     {name:"Kim Soun", rating:3.5, profilePic:"somepicture", comments:"1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"},
@@ -148,22 +150,14 @@ function Example() {
   //   <Button Label={"disabled"}  destination={"/About"} />
   //   </>
   // )
+  // let customer = [
+  //   {id : 1, fullname:"Kim Soun", rating:[1,1,1,0.5,0], profilePic:"somepicture", comments:"1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt gghggbybbybgtbkb jhugjhjj gbgbygygtbgbo yggbobo",}
+  // ]
   return(
     <>
-      <Hero/>
-      <div style={{justifyContent:"center", display:"flex"}}>
-        <div style={{backgroundColor:"red", width:"200px",height:"200px", display:"flex", justifyContent:"center",'@media (minWidth: 700px)': {backgroundColor:'black',}}}></div>
-      </div>
-      <div style={{
-      width: '100%',
-      height: '100px',
-      backgroundColor: 'lightblue',
-      '@media (minWidth: 768px)': { // Media query for screens with minimum width of 768px
-        backgroundColor: 'lightgreen',
-      }
-    }}>
-      This is a responsive div.
-    </div>
+    <Hero/>
+    <Testimonials/>
+    <div style={{width:"20px",height:"200px", color:"red"}}></div>
     </>
   )
 }

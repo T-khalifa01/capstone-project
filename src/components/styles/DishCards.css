@@ -1,5 +1,5 @@
 .dishcards{
-    background-color: var(--secondaryColour2);
+    background-color: var(--highlightColour1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +30,7 @@
     color: var(--highlightColour2);
 }
 .dishPrice{
-    color: var(--secondaryColour1);
+    color: var(--primaryColour1);
 }
 .dishDescSec{
     width: 14rem;
