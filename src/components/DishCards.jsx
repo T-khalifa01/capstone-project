@@ -29,7 +29,7 @@ function DishCards(props) {
       :
       <>
         {dishes.map((dish, index) => (
-            <article id='dshcrd' key={index} className='' style={{overflow:"hidden", backgroundColor:"var(--highlightColour1)", display:"grid", gridTemplateRows:"min(50%, 256px) min(50%, 256px)", height: {crdH}, width:"clamp(100px, 100%, 256px)", borderRadius:"16px",  }}>
+            <article id='dshcrd' key={index} className='' style={{overflow:"hidden", backgroundColor:"var(--highlightColour1)", display:"grid", gridTemplateRows:"min(50%, 256px) min(50%, 256px)", height: {crdH}, width:"clamp(100px, 100%, 256px)", borderRadius:"16px", boxShadow:"-8px 8px 4px rgba(0, 0, 0, 0.25)" }}>
 
               <span className='' style={{gridColumn:"1",  display:"flex", width:"min(100%, 250px)", height:"min(100%, 250px)", overflow:"hidden"}}>
                 <img src= {require(`../assets/dishPics/${dish.dishPicSrc}`)} alt={dish.alt} height={"100%"} width={"100%"} style={{overflow:"hidden"}}/>

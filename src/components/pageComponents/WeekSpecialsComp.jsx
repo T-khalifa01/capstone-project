@@ -6,21 +6,21 @@ import Media from 'react-media'
 import Button from '../Button'
 import jsonData from '../../data.json'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 function WeekSpecials() {
 
   const [dishData, setDishData] = useState('Specials');
 
-  //const {dishes} = jsonData
-  //console.log(dishes)
+  const navigate = useNavigate();
 
-  // let cardData2 = `${dishes}.${dishData}`
-  // console.log(cardData2)
-  //let cardData = jsonData.dishes[dishData]
-  //let cardData = `${cardData1}.dishData`
   const handlebtnClick = (data) => {
     setDishData(data);
   };
+  const handleCMenu = () => {
+    navigate("/Menu")
+  }
 
 
   return (
@@ -51,11 +51,11 @@ function WeekSpecials() {
             </div>
           </section>
         :
-          <section style={{display:"flex", justifyContent:"center", alignItems:"center", backgroundColor:"var(--highlightColour2)"}}>
-            <span style={{display:"grid", gridTemplateRows:"64px auto", width:"min(860px, 80%)"}}>
-              <header style={{gridRow:"1", display:"flex", justifyContent:"space-between"}}>
-                <h2>This week's Specials</h2>
-                <h3>Button</h3>
+          <section style={{display:"flex", justifyContent:"center", alignItems:"center",}}>
+            <span style={{display:"grid", gridTemplateRows:"64px auto", width:"min(860px, 80%)", paddingTop:"20px", paddingBottom:"20px", }}>
+              <header style={{gridRow:"1", display:"flex", justifyContent:"space-between", alignItems:"center", height:"40px", }}>
+                <h2 className='SectionTitle' style={{color:"var(--primaryColour1)", }}>This week's Specials</h2>
+                <Button Label={"Online Menu"} clickFn={handleCMenu} />
               </header>
               <span style={{gridRow:"2", display:"grid", gridTemplateColumns:"repeat(3, minMax( 100px, 250px))", gap:"6.3953%"}}>
                 <DishCards dishes={jsonData.dishes[dishData]}/>
@@ -68,16 +68,3 @@ function WeekSpecials() {
 }
 
 export default WeekSpecials;
-   // <section className='specialsSec'>
-    //   <section className='specialsHeadingSec'>
-    //     <header className='specialsHeading'>
-    //       <h3 className='SectionTitle '>This Week's Specials</h3>
-    //       <h3>view online menu</h3>
-    //     </header>
-    //   </section>
-    //   <section className='specialsContainer'>
-    //     <section className='specialsCards'>
-    //       <DishCards dishes={dishes} />
-    //     </section>
-    //   </section>
-    // </section>
