@@ -1,22 +1,22 @@
 .aboutSec {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .aboutMain{
-    display: flex;
-    flex-basis: min(860px, 75vw);
+  display: flex;
+  flex-basis: min(860px, 75vw);
 }
 .aboutTitle{
-    color: var(--primaryColour2);
+  color: var(--primaryColour2);
 }
 .aboutSubTitle{
-    color: var(--primaryColour1);
+  color: var(--primaryColour1);
 }
 .aboutDescSec{
-    width: 19.3125rem;
-    height: 11.25rem;
+  width: 19.3125rem;
+  height: 11.25rem;
 }
 .aboutDesc{
-    color: var(--HighlightColour2);
+  color: var(--HighlightColour2);
 }

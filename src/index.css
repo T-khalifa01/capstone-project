@@ -3,6 +3,7 @@ body {
   font-family: 'karla', 'Markazi-text';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAFA;
 }
 
 /* -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -49,7 +50,7 @@ body {
 
 .SectionTitle{
   font-family: var(--primaryFontFamily);
-  font-size: 20px; /*clap( 13.4, 10vw , 26.7)*/
+  font-size: clamp( 18px, 6vw , 26.7px);
   font-style: normal;
   font-weight: 800;
   line-height: normal;

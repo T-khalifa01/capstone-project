@@ -5,9 +5,17 @@ import './styles/HeroStyles.css'
 import  restauranfood from '../assets/restauranfood.jpg'
 import DynamicFontSize from './DynamicFontSize'
 import Button from './Button'
+import { useNavigate } from 'react-router-dom'
 
 
 function Hero() {
+
+  //handling button onClick event
+    const navigate = useNavigate();
+    
+    const handleBtnClick = () => {
+      navigate("/Reservations")
+    }
 
   //styling layout desk
     let hero = {
@@ -174,13 +182,13 @@ function Hero() {
       justifyContent: "space-between",
       gridTemplateColumns: "repeat(12, 1fr)",
     }
-    let PicSecMobile = {
-      display: "flex",
-      gridColumn: "6/span 3",
-      gridRow: "4/span 7",
-      justifyContent: "center",
-      alignItems: "center",
-    }
+    // let PicSecMobile = {
+    //   display: "flex",
+    //   gridColumn: "6/span 3",
+    //   gridRow: "4/span 7",
+    //   justifyContent: "center",
+    //   alignItems: "center",
+    // }
     let btnSecMobile = {
       display: "flex",
       // gridColumn: "1/span 4",
@@ -227,7 +235,7 @@ function Hero() {
                     <img id='hpicMobile' className='' style={heroPicMobile} src= {restauranfood} alt='a waiter holding four sandwitches on a plate' />
                   </span >
                   <span style={btnSecMobile}>
-                    <Button Label={"Reserve Tabel"} destination={"/Reservations"} size={"sm"}/>
+                    <Button Label={"Reserve Tabel"} size={"sm"} clickFn={ handleBtnClick} />
                   </span>
                 </span>
               </span>
@@ -245,7 +253,7 @@ function Hero() {
                   <p style={herodescTab} className='ParagraphText'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                 </span>
                 <span style={btnSec}>
-                  <Button Label={"Reserve Tabel"} destination={"/Reservations"}/>
+                  <Button Label={"Reserve Tabel"} clickFn={ handleBtnClick}/>
                 </span>
                 <span id='heropicTab' style={heroPicSec} >
                   <img style={heroPicTab} src= {restauranfood} alt='a waiter holding four sandwitches on a plate' />
@@ -265,7 +273,7 @@ function Hero() {
                   <p style={herodesc} className='ParagraphText'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                 </span>
                 <span style={btnSec}>
-                  <Button Label={"Reserve Tabel"} destination={"/Reservations"}/>
+                  <Button Label={"Reserve Tabel"} clickFn={ handleBtnClick}/>
                 </span>
                 <span style={heroPicSec}>
                   <img style={heroPic} src= {restauranfood} alt='a waiter holding four sandwitches on a plate' />

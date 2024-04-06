@@ -1,43 +1,55 @@
 import { Fragment } from 'react';
 import Media from 'react-media';
 import './styles/NavStyles.css';
-import { userFilledsvg, userOutlinedsvg, addToCartsvg, navlinks } from './Data';
+import { userFilledsvg, userOutlinedsvg, addToCartsvg, } from './Data';
+import jsonData from "../data.json"
 import LinkItems from './LinkItems';
 
 
 function Nav() {
 
+  const {navlinks} = jsonData
   // let screenSize = UsescreenSize();
   // let screenWidth = screenSize.Width;
 
   //removing user agent styles (default styles)
     //removing default ul tag style (user agent styles)
-    let defaultUl = {
-      listStyleType: "none",
-      marginBlockStart: "0em",
-      marginBlockEnd: "0em",
-      paddingInlineStart: "0px",
-    };
+      let defaultUl = {
+        listStyleType: "none",
+        marginBlockStart: "0em",
+        marginBlockEnd: "0em",
+        paddingInlineStart: "0px",
+      };
 
     //removing default li tag style (user agent styles)
-    let defaultLi = {
-      listStyleType: "none",
-    };
+      // let defaultLi = {
+      //   listStyleType: "none",
+      // };
 
     //removing a tag stles (user agent styles)
-    let defaultA = {
-      textDecoration: "none",
-    };
+      // let defaultA = {
+      //   textDecoration: "none",
+      // };
 
-    let navUlStyles ={
-      display: "flex",
-      flexGrow: 1,
-      justifyContent: "space-between",
-    };
-    const navAStyles = {
-      color: "var(--primaryColour1)",
-    };
-    let aClass = "LeadText";
+  //setting styles
+    //ul tag style
+      let navUlStyles ={
+        display: "flex",
+        flexGrow: 1,
+        justifyContent: "space-between",
+      };
+
+    //li tag style
+      let navAStyles = {
+        color: "var(--primaryColour1)",
+      };
+
+  //merging styles
+    //ul tag styles
+      let mergedUl = {...defaultUl,...navUlStyles}
+  //setting classname
+    //a tag className
+      let aClass = "LeadText";
 
   //svg styles
     let svgUlStyles = {
@@ -82,7 +94,9 @@ function Nav() {
           )}
 
           {matches.desktop && (
-            <LinkItems data={navlinks} withHeader={false} ulStyles={navUlStyles}  aStyles={navAStyles} aClass={aClass}/>
+            <ul style={mergedUl}>
+              <LinkItems data={navlinks} withHeader={false} aStyles={navAStyles} aClass={aClass} asLink={true}/>
+            </ul>
           )}
         </Fragment>
       )}

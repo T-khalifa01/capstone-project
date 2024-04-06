@@ -1,0 +1,234 @@
+{
+
+  "navlinks": [
+    {
+      "id" : 1,
+      "name":"About",
+      "to":"/About"
+    },
+    {
+      "id" : 2,
+      "name":"Menu",
+      "to":"/DishMenu"
+    },
+    {
+      "id" : 3,
+      "name":"Reservations",
+      "to":"/Reservations"
+    },
+    {
+      "id" : 4,
+      "name":"Order-Online",
+      "to":"/OrderOnline"
+    },
+    {
+      "id" : 5,
+      "name":"LogIn",
+      "to":"/Login"
+    }
+  ],
+
+
+  "dishes":{
+
+    "A La Carte":[
+      {
+        "id" : 1,
+        "name": "",
+        "price": "",
+        "dishPicSrc":"",
+        "description": "",
+        "alt":""
+      }
+    ],
+
+    "Desserts":[
+      {
+        "id" : 1,
+        "name": "",
+        "price": "",
+        "dishPicSrc":"",
+        "description": "",
+        "alt":""
+      }
+    ],
+
+    "Lunch":[
+      {
+        "id" : 1,
+        "name": "",
+        "price": "",
+        "dishPicSrc":"",
+        "description": "",
+        "alt":""
+      }
+    ],
+
+    "Main":[
+      {
+        "id" : 1,
+        "name": "",
+        "price": "",
+        "dishPicSrc":"",
+        "description": "",
+        "alt":""
+      }
+    ],
+
+    "Sides":[
+      {
+        "id" : 1,
+        "name": "sides",
+        "price": "12.99",
+        "dishPicSrc":"greekSalad.jpg",
+        "description": "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
+        "alt":"our famous Greek Salad"
+      },
+      {
+        "id" : 2,
+        "name": "sides1",
+        "price": "5.99",
+        "dishPicSrc":"Brushetta.png",
+        "description": "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. Toppings of tomato, veggies, beans, cured pork, or cheese are examples of variations. In Italy, a brustolina grill is frequently used to create bruschetta.",
+        "alt":"Our tasty Bruchetta"
+      },
+      {
+        "id" : 3,
+        "name": "sides2",
+        "price": "5.00",
+        "dishPicSrc":"lemonDessert.jpg",
+        "description": "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "alt":"our Lemon Dessert"
+      }
+    ],
+
+    "Specials": [
+      {
+        "id" : 1,
+        "name": "Greek Salad",
+        "price": "12.99",
+        "dishPicSrc":"greekSalad.jpg",
+        "description": "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
+        "alt":"our famous Greek Salad"
+      },
+      {
+        "id" : 2,
+        "name": "Bruchetta",
+        "price": "5.99",
+        "dishPicSrc":"Brushetta.png",
+        "description": "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. Toppings of tomato, veggies, beans, cured pork, or cheese are examples of variations. In Italy, a brustolina grill is frequently used to create bruschetta.",
+        "alt":"Our tasty Bruchetta"
+      },
+      {
+        "id" : 3,
+        "name": "Lemon Dessert",
+        "price": "5.00",
+        "dishPicSrc":"lemonDessert.jpg",
+        "description": "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "alt":"our Lemon Dessert"
+      },
+      {
+        "id" : 4,
+        "name": "grilled Fish",
+        "price": "20.00",
+        "dishPicSrc":"GrilledFish.png",
+        "description": "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "alt":"our Grilled Fish"
+      },
+      {
+        "id" : 5,
+        "name": "pasta",
+        "price": "18.99",
+        "dishPicSrc":"Pasta.png",
+        "description": "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "alt":"our tasty Pasta"
+      }
+      ]
+  },
+
+
+  "customers": [
+    {
+      "id" : 1,
+      "fullname":"Kim Soun",
+      "rating":[1,1,1,0.5,0],
+      "profilePic":"KimSoun.png",
+      "comments":"1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "alt":"our loyal customer"
+    },
+    {
+      "id" : 2,
+      "fullname":"Atlas Sparta",
+      "rating":[1,1,1,1,0.5],
+      "profilePic":"AtlasSparta.png",
+      "comments":"2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "alt":"our loyal customer"
+    },
+    {
+      "id" : 3,
+      "fullname":"precious Nkenna",
+      "rating":[1,1,1,0,0],
+      "profilePic":"preciousNkenna.png",
+      "comments":"3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "alt":"our loyal customer"
+    },
+    {
+      "id" : 4,
+      "fullname":"Nate Willson",
+      "rating":[1,1,1,1,1],
+      "profilePic":"NateWillson.png",
+      "comments":"4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "alt":"our loyal customer"
+    }
+  ],
+
+  "contactsList" : [
+    {
+      "id" : "clsm1",
+      "name":"little lemon, Chicago"
+    },
+    {
+      "id" : "clsm2",
+      "name":"+1 (312) 123 4567"
+    },
+    {
+      "id" : "clsm3",
+      "name":"support@littlemon.com"
+    },
+    {
+      "id" : "clsm4",
+      "name": "@littllemon"
+    },
+    {
+      "id" : "clsm5",
+      "name": "@littllemon"
+    }
+  ],
+
+  "contactList": [
+    {
+      "id" : "cls1",
+      "name":"little lemon, Chicago"
+    },
+    {
+      "id" : "cls2",
+      "name":"+1 (312) 123 4567"
+    },
+    {
+      "id" : "cls3",
+      "name":"support@littlemon.com"
+    }
+  ],
+
+  "socialMediaLinks": [
+    {
+      "id" :"sMM1",
+      "name": "Facebook"
+    },
+    {
+      "id" :"sML2",
+      "name": "Instagram"
+    }
+  ]
+
+}

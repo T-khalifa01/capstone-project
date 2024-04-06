@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
 import Media from 'react-media';
 import { fullStrSvg, halfStrSvg, noStrSvg } from './Data';
+// import AtlasSparta from '../assets/userpics/AtlasSparta.png';
+// import KimSoun from '../assets/userpics/KimSoun.png';
+// import NateWillson from '../assets/userpics/NateWillson.png';
+// import preciousNkenna from '../assets/userpics/preciousNkenna.png';
 import './styles/CustomersCards.css'
 
 
@@ -9,10 +13,14 @@ function CustomersCards(props) {
 
   let ratingLevels = {0.5:halfStrSvg, 1:fullStrSvg, 0:noStrSvg};
 
-  let reviews = customers.map((customer) => {
-    return(
-      <Media queries={{mobile: "(max-width: 430px)"}}>
-        {matches => matches.mobile ?
+  // let reviews = customers.map((customer) => {
+  //   return(<div></div>)
+  // })
+  return (
+    <Media queries={{mobile: "(max-width: 430px)"}}>
+      {matches => matches.mobile ?
+      <>
+        {customers.map((customer) => (
           <article className='' key={customer.id} style={{display:"flex",
                                                           flexDirection:"column",
                                                           backgroundColor:"var(--highlightColour2)",
@@ -30,7 +38,7 @@ function CustomersCards(props) {
               </span>
               <span style={{gridRow:"2",display:"grid", gridTemplateColumns:"repeat(12, 1fr)", height:"96px" }}>
                 <span className='' style={{gridColumn:"1/span 4", paddingLeft:"8px"}}>
-                  <img style={{height:"90%", width:"90%", paddingLeft:"8px"}} src= {customer.profilePic} alt='a waiter holding four sandwitches on a plate' />
+                  <img style={{height:"90%", width:"90%", paddingLeft:"8px", borderRadius:"16px"}} src= {require(`../assets/userpics/${customer.profilePic}`)} alt= {customer.alt} />
                 </span>
                 <span className='' style={{gridColumn:"5/span 8", paddingLeft:"8px", display:"grid", height:"100%", gridTemplateRows:"24px 66px", gap:"6px", }}>
                   <h3 className='CardTitle' style={{gridRow:"1", color:"var(--secondaryColour2)", fontSize:"clamp(12px, 5vw, 24px)", display:"flex", flexBasis:"24px", flexGrow:"1"}}>{customer.fullname}</h3>
@@ -39,7 +47,11 @@ function CustomersCards(props) {
               </span>
             </span>
           </article>
-          :
+        ))}
+      </>
+      :
+      <>
+        {customers.map((customer) => (
           <article className='' key={customer.id} style={{ display:"flex",
                                                                     flexDirection:"column",
                                                                     backgroundColor:"var(--highlightColour2)",
@@ -51,7 +63,7 @@ function CustomersCards(props) {
             <span style={{display:"grid", gridTemplateRows:"88px 72px", width:"85%", height:"85%", gap:"10px" }}>
               <span style={{gridRow:"1", display:"grid", gridTemplateColumns:"repeat(12, 1fr)", }}>
                 <span style={{gridColumn:"1/span 4", display:"flex" , justifyContent:"center", alignItems:"center"}}>
-                  <img src= {customer.profilePic} alt='a waiter holding four sandwitches on a plate' style={{height:"90%", width:"90%", fontSize:"8px"}}/>
+                  <img src= {require(`../assets/userpics/${customer.profilePic}`)} alt= {customer.alt} style={{height:"90%", width:"90%", fontSize:"8px", borderRadius:"16px"}}/>
                 </span>
                 <span style={{gridColumn:"6/span 7", display:"grid", gridTemplateRows:"repeat(2, 1fr)"}}>
                   <span className='' style={{gridRow:"1", display:"flex", flexDirection:"row"}}>
@@ -67,14 +79,11 @@ function CustomersCards(props) {
               </span>
             </span>
           </article>
-        }
-      </Media>
-    )
-  })
-return (
-  <>
-    {reviews}
-  </>
-)}
+        ))}
+      </>
+      }
+    </Media>
+  )
+}
 
 export default CustomersCards
